@@ -1,0 +1,132 @@
+====================================================================================================
+IFC COMPLETE REPORT (PARSE + BARCELONA COMPLIANCE)
+====================================================================================================
+IFC file      : C:\Users\User\github-classroom\iaac-maai\intro-to-ifc-jineshnarendrajain\assets\duplex.ifc
+Generated at  : 2026-02-26T14:07:56
+
+A) IFC PARSE SUMMARY
+----------------------------------------------------------------------------------------------------
+Total parse rows: 37 (summary=13, details=24)
+
+1) STATUS DISTRIBUTION
+----------------------------------------------------------------------------------------------------
+Status          Count
+----------------------------------------------------------------------------------------------------
+PASS               11
+WARNING             1
+LOG                25
+
+2) ENTITY COUNTS
+----------------------------------------------------------------------------------------------------
+Entity Type                       Count       Status
+----------------------------------------------------------------------------------------------------
+IfcProject                            1         PASS
+IfcSite                               1         PASS
+IfcBuilding                           1         PASS
+IfcBuildingStorey                     4         PASS
+IfcSpace                             21         PASS
+IfcWall                              57         PASS
+IfcSlab                              21         PASS
+IfcDoor                              14         PASS
+IfcWindow                            24         PASS
+IfcColumn                             0      WARNING
+IfcBeam                               8         PASS
+
+3) SAMPLED ELEMENTS
+----------------------------------------------------------------------------------------------------
+  # Type               Name                               GlobalId                 Note             
+----------------------------------------------------------------------------------------------------
+  1 IfcProject         0001                               1xS3BCk291UvhgP2a6eflL   log              
+  2 IfcSite            Default                            1xS3BCk291UvhgP2a6eflN   log              
+  3 IfcBuilding        IfcBuilding #36                    1xS3BCk291UvhgP2a6eflK   log              
+  4 IfcBuildingStorey  Level 1                            1xS3BCk291UvhgP2dvNMKI   log              
+  5 IfcBuildingStorey  Level 2                            1xS3BCk291UvhgP2dvNMQJ   log              
+  6 IfcBuildingStorey  T/FDN                              1xS3BCk291UvhgP2dvNsgp   log              
+  7 IfcSpace           A101                               0BTBFw6f90Nfh9rP1dlXrr   log              
+  8 IfcSpace           A201                               0BTBFw6f90Nfh9rP1dlXri   log              
+  9 IfcSpace           B104                               0BTBFw6f90Nfh9rP1dl_3P   log              
+ 10 IfcWall            Basic Wall:Party Wall - CMU Res... 2O2Fr$t4X7Zf8NOew3FKau   log              
+ 11 IfcWall            Basic Wall:Interior - Partition... 2O2Fr$t4X7Zf8NOew3FNld   log              
+ 12 IfcWall            Basic Wall:Party Wall - CMU Res... 2O2Fr$t4X7Zf8NOew3FNbT   log              
+ 13 IfcSlab            Floor:127mm Slab on Grade:141232   2O2Fr$t4X7Zf8NOew3FK4F   log              
+ 14 IfcSlab            Floor:127mm Slab on Grade:143106   2O2Fr$t4X7Zf8NOew3FKcz   log              
+ 15 IfcSlab            Floor:Residential - Wood Joist ... 1hOSvn6df7F8_7GcBWlRqU   log              
+ 16 IfcDoor            M_Single-Flush:1250mm x 2010mm:... 1hOSvn6df7F8_7GcBWlRGQ   log              
+ 17 IfcDoor            M_Single-Flush:1250mm x 2010mm:... 1hOSvn6df7F8_7GcBWlRH8   log              
+ 18 IfcDoor            M_Single-Flush:0762 x 2032mm:07... 1hOSvn6df7F8_7GcBWlS8Z   log              
+ 19 IfcWindow          M_Fixed:4835mm x 2420mm:4835mm ... 1hOSvn6df7F8_7GcBWlR72   log              
+ 20 IfcWindow          M_Fixed:4835mm x 2420mm:4835mm ... 1hOSvn6df7F8_7GcBWlRBU   log              
+ 21 IfcWindow          M_Fixed:750mm x 2200mm:750mm x ... 1hOSvn6df7F8_7GcBWlRLx   log              
+ 22 IfcBeam            M_W-Wide Flange:W310X60:W310X60... 2OrWItJ6zAwBNp0OUxK_l8   log              
+ 23 IfcBeam            M_W-Wide Flange:W410X60:W410X60... 2OrWItJ6zAwBNp0OUxK$8W   log              
+ 24 IfcBeam            M_W-Wide Flange:W410X60:W410X60... 2OrWItJ6zAwBNp0OUxK$Bq   log              
+
+4) PARSE WARNINGS / FAILURES / BLOCKED
+----------------------------------------------------------------------------------------------------
+- [WARNING] Summary | IfcColumn Count
+  comment: No IfcColumn elements found
+
+B) BARCELONA SPACE COMPLIANCE
+----------------------------------------------------------------------------------------------------
+Total space checks: 21
+
+1) COMPLIANCE STATUS COUNTS
+----------------------------------------------------------------------------------------------------
+Status          Count
+----------------------------------------------------------------------------------------------------
+PASS               12
+FAIL                9
+
+2) SPACE-BY-SPACE RESULTS
+----------------------------------------------------------------------------------------------------
+  # Space                      Status   Measured                           Required                  
+----------------------------------------------------------------------------------------------------
+  1 A101                       FAIL     space_type=unknown, area_m2=17.... min_area_m2=None, min_h...
+  2 A201                       PASS     space_type=Corridor, area_m2=7.... min_area_m2=1.500, min_...
+  3 B104                       FAIL     space_type=Bathroom, area_m2=3.... min_area_m2=4.000, min_...
+  4 B101                       FAIL     space_type=unknown, area_m2=17.... min_area_m2=None, min_h...
+  5 B201                       PASS     space_type=Corridor, area_m2=7.... min_area_m2=1.500, min_...
+  6 A205                       FAIL     space_type=unknown, area_m2=1.7... min_area_m2=None, min_h...
+  7 B205                       FAIL     space_type=unknown, area_m2=1.7... min_area_m2=None, min_h...
+  8 A105                       FAIL     space_type=unknown, area_m2=4.9... min_area_m2=None, min_h...
+  9 B105                       FAIL     space_type=unknown, area_m2=4.9... min_area_m2=None, min_h...
+ 10 R301                       FAIL     space_type=unknown, area_m2=145... min_area_m2=None, min_h...
+ 11 B102                       PASS     space_type=Living Room, area_m2... min_area_m2=16.000, min...
+ 12 A102                       PASS     space_type=Living Room, area_m2... min_area_m2=16.000, min...
+ 13 A103                       PASS     space_type=Kitchen, area_m2=13.... min_area_m2=8.000, min_...
+ 14 B103                       PASS     space_type=Kitchen, area_m2=13.... min_area_m2=8.000, min_...
+ 15 B204                       PASS     space_type=Bathroom, area_m2=5.... min_area_m2=4.000, min_...
+ 16 A204                       PASS     space_type=Bathroom, area_m2=5.... min_area_m2=4.000, min_...
+ 17 A104                       FAIL     space_type=Bathroom, area_m2=3.... min_area_m2=4.000, min_...
+ 18 B203                       PASS     space_type=Bedroom, area_m2=26.... min_area_m2=9.000, min_...
+ 19 A202                       PASS     space_type=Bedroom, area_m2=26.... min_area_m2=9.000, min_...
+ 20 B202                       PASS     space_type=Bedroom, area_m2=26.... min_area_m2=9.000, min_...
+ 21 A203                       PASS     space_type=Bedroom, area_m2=26.... min_area_m2=9.000, min_...
+
+3) NON-COMPLIANT DETAILS
+----------------------------------------------------------------------------------------------------
+- [FAIL] A101
+  reasons: Could not infer space type
+- [FAIL] B104
+  reasons: Area 3.998 m2 < required 4.000 m2.
+- [FAIL] B101
+  reasons: Could not infer space type
+- [FAIL] A205
+  reasons: Could not infer space type
+- [FAIL] B205
+  reasons: Could not infer space type
+- [FAIL] A105
+  reasons: Could not infer space type
+- [FAIL] B105
+  reasons: Could not infer space type
+- [FAIL] R301
+  reasons: Could not infer space type
+- [FAIL] A104
+  reasons: Area 3.998 m2 < required 4.000 m2.
+
+4) COMPLIANCE SUMMARY ROWS
+----------------------------------------------------------------------------------------------------
+- Barcelona Space Compliance Summary: checked=21, passed=12, failed=9, warnings=0, rate=57.14%
+  comment: Computed from provided Barcelona rules
+
+====================================================================================================
